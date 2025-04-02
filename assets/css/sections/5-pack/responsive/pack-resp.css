@@ -1,0 +1,30 @@
+@media screen and (max-width: 480px){
+    .pack{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img-pack{
+        width: 400px;
+    }
+    .container-pack{
+        align-items: center;
+    }
+    .titulo-pack{
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .logo-pack{
+        width: 80px;
+        margin-left: 30px;
+        align-self: flex-start;
+    }
+    .texto-pack{
+        align-items: flex-start;
+        font-size: 15px;
+        margin: 25px 30px 25px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    
+}

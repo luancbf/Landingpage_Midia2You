@@ -1,0 +1,71 @@
+@media screen and (max-width: 480px){
+    header{
+        height: 5rem;
+    }
+    .logo{
+        width: 4rem;
+        margin: 30px;
+    }
+
+    .nav ul {
+        height: auto;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        background-color: var(--color-1);
+        padding: 10px 0 20px;
+    }
+    .nav ul li a{
+        font-size: 1rem;
+    }
+
+    .nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    header{
+        height: 130px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .hamburger{
+        font-size: 50px;
+    }
+    
+    .nav ul {
+        height: auto;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 130px; /* Altura do header */
+        left: 0;
+        right: 0;
+        background-color: var(--color-1);
+        padding: 10px 0 20px;
+        gap: 5px;
+    }
+    .nav ul li a{
+        font-size: 25px;
+    }
+    .nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 30px;
+    }
+}

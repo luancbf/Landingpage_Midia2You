@@ -1,0 +1,27 @@
+@media screen and (max-width: 480px){
+    .sobre{
+        height: auto;
+        gap: 2rem;
+    }
+    .titulo-sobre{
+        font-size: 2rem;
+    }
+    .conteudo-sobre{
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .texto-sobre{
+        width: 80%;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .img-sobre{
+        width: 80%;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    
+}
