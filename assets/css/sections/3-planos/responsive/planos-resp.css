@@ -14,6 +14,7 @@
 
     .slider-planos{
         width: 300px;
+        height: 31rem;
         justify-content: flex-start;
     }
     .slides-planos{
@@ -100,26 +101,31 @@
     .frente-elemento-1,
     .frente-elemento-2,
     .frente-elemento-3{
+        padding: 1rem;
         width: 300px;
         border-radius: 30px;
         top: 80px;
     }
-    .fundo-elemento-1{height: 150px;}
-    .frente-elemento-1{height: 250px;}
-
-    .fundo-elemento-2{height: 150px;}
-    .frente-elemento-2{height: 300px;}
-
-    .fundo-elemento-3{height: 510px;}
-    .frente-elemento-3{height: 430px;}
+    .fundo-elemento-1,
+    .fundo-elemento-2,
+    .fundo-elemento-3{
+        height: 150px;
+    }
+    
+    .frente-elemento-1,
+    .frente-elemento-2,
+    .frente-elemento-3{
+        height: auto;
+        max-height: 450px;
+    }
 
     .titulo-elemento{
         font-size: 25px;
         margin-top: 25px;
     }
     .texto-elemento{
-        width: 240px;
         font-size: 17px;
+        white-space: none;
     }
 
     .botao-planos{

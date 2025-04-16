@@ -1,6 +1,8 @@
 @media screen and (max-width: 480px){
     header{
+        position: fixed;
         height: 5rem;
+        z-index: 1000;
     }
     .logo{
         width: 4rem;
