@@ -14,7 +14,8 @@
 
     .slider-planos{
         width: 300px;
-        height: 31rem;
+        height: 31.5rem;
+        max-height: 35rem;
         justify-content: flex-start;
     }
     .slides-planos{
