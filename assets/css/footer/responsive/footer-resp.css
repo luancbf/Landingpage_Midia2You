@@ -13,15 +13,16 @@
     .rede-social{
         gap: 0.5rem;
     }
-    .icone-rede-social{
+    .rede-social img{
         width: 20px;
         height: 20px;
+        color: var(--color-2);
     }
     .texto-rede-social{
         font-size: 0.8rem;
     }
     .img-footer{
-        width: 8rem;
+        width: 10rem;
     }
 }
 

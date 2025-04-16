@@ -23,6 +23,9 @@
         font-size: 15px;
         margin: 25px 30px 25px;
     }
+    .botao-pack{
+        width: 60%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px){

@@ -2,6 +2,7 @@
     .sobre{
         height: auto;
         gap: 2rem;
+        margin: 4rem 0;
     }
     .titulo-sobre{
         font-size: 2rem;

@@ -25,6 +25,7 @@
 
     .nav ul.active {
         display: flex;
+        gap: 5px;
     }
 
     .hamburger {

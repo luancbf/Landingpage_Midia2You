@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('.img-story, .img-carrossel');
+    const images = document.querySelectorAll('.img-story img, .img-carrossel');
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modalImage');
     const closeModal = document.getElementById('closeModal');

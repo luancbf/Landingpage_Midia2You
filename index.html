@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Midia2You</title>
     <link rel="stylesheet" href="assets/css/index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +28,8 @@
      viewBox="-618 355 1582 1583" fill="#d2baa7" preserveAspectRatio="xMidYMid meet">
     <path d="M599.389,1469.581C726.954,1367.590,873.069,1236.884,855.878,1074.106C839.019,914.473,640.875,860.272,523.443,750.468C410.793,645.136,345.979,454.994,192.045,453.396C37.670,451.795,-61.804,613.758,-144.903,743.533C-209.949,845.115,-197.233,965.541,-212.601,1085.329C-232.721,1242.162,-348.441,1418.514,-247.135,1540.409C-145.472,1662.735,50.176,1605.059,208.340,1591.826C349.929,1579.979,488.589,1558.168,599.389,1469.581Z"/>
     </svg>
-    
 
 
-    
     <header>
         <div class="logo">
             <img src="assets/img/logom2y-02.png" alt="Logo da Midia2You">
@@ -65,7 +63,7 @@
             <img class="logo-inicio" src="/assets/img/logom2y-01.png" alt="Logo da Midia2You">
         </section>
 
-        <section id="sobre" class="sobre">
+        <section class="sobre">
             <h1 class="titulo-sobre">Quem somos?</h1>
             <div class="conteudo-sobre">
                 <p class="texto-sobre">
@@ -91,7 +89,7 @@
             <h1 class="titulo-planos">Confira nossos planos mensais</h1>
             <div class="slider-planos">
                 <div class="slides-planos">
-                    <input type="radio" name="radio-btn" id="radio1" chacked>
+                    <input type="radio" name="radio-btn" id="radio1" checked>
                     <input type="radio" name="radio-btn" id="radio2">
                     <input type="radio" name="radio-btn" id="radio3">
 
@@ -180,7 +178,9 @@
                     <label for="radio3" class="manual-btn"></label>
                 </div>
             </div>
-            <a class="btn-padrao" href="">Tenho interesse</a>
+            <div class="botao-planos">
+                <a class="btn-padrao" href="">Tenho interesse</a>
+            </div>
         </section>
 
         <section id="realtime" class="realtime">
@@ -195,9 +195,9 @@
                     <img class="foto-player" src="assets/img/Board.png" alt="" data-video-id="1070110869">
                 </div>
 
-                <div id="videoModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
+                <div id="videoModal" class="modal-player">
+                    <div class="modal-content-player">
+                        <span class="close-player">&times;</span>
                         <iframe id="videoIframe" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Video"></iframe>
                     </div>
                 </div>
@@ -229,7 +229,9 @@
                     </div>
                 </div>
             </div>
-            <a class="btn-padrao" href="">Tenho interesse</a>
+            <div class="botao-realtime">
+                <a class="btn-padrao" href="">Tenho interesse</a>
+            </div>
         </section>
 
         <section id="pack" class="pack">
@@ -244,9 +246,10 @@
                     Após a confirmação de pagamento o acesso chegará
                     no seu e-mail.
                 </p>
-                <a class="btn-padrao" href="">Quero adquirir</a>
+                <div class="botao-pack">
+                    <a class="btn-padrao" href="">Quero adquirir</a>
+                </div>
             </div>
-
         </section>
 
         <section class="extra">
@@ -296,7 +299,9 @@
                     redes sociais e que refletem o estilo do evento.
                 </p>
             </div>
-            <a class="btn-padrao" href="">Entre em contato</a>
+            <div class="botao-extra">
+                <a class="btn-padrao" href="">Entre em contato</a>
+            </div>
         </section>
 
         <section id="portifolio" class="portifolio">
@@ -309,7 +314,6 @@
                             <input type="radio" name="radio-btn-story" id="radio1-story" checked>
                             <input type="radio" name="radio-btn-story" id="radio2-story">
                             <input type="radio" name="radio-btn-story" id="radio3-story">
-                            <input type="radio" name="radio-btn-story" id="radio4-story">
                             
                             <div class="img-story first-story">
                                 <img src="/assets/img/img-port-1.JPG" alt="">
@@ -328,14 +332,12 @@
                                 <div class="auto-btn1-story"></div>
                                 <div class="auto-btn2-story"></div>
                                 <div class="auto-btn3-story"></div>
-                                <div class="auto-btn4-story"></div>
                             </div>
                         </div>
                         <div class="manual-navigation-story">
                             <label for="radio1-story" class="manual-btn-story"></label>
                             <label for="radio2-story" class="manual-btn-story"></label>
                             <label for="radio3-story" class="manual-btn-story"></label>
-                            <label for="radio4-story" class="manual-btn-story"></label>
                         </div>
                     </div>
                 </div>
@@ -348,13 +350,42 @@
                 </div>
                 <div class="container-reels">
                     <p class="titulo-conteudo-portifolio">Reels</p>
-                    <div class="conteudo-reels">
-                        <img class="foto-player-reels" src="assets/img/Board.png" alt="" data-video-id="1070110868">
-                        <img class="foto-player-reels" src="assets/img/Board.png" alt="" data-video-id="1070110869">
+                    <div class="slider-reels">
+                        <div class="slides-reels">
+                            <input type="radio" name="radio-btn-reels" id="radio1-reels" checked>
+                            <input type="radio" name="radio-btn-reels" id="radio2-reels">
+                            <input type="radio" name="radio-btn-reels" id="radio3-reels">
+
+                            <div class="img-reels first-reels">
+                                <img class="foto-player-reels" src="assets/img/Board.png" alt="" data-video-id="1070110868">
+                            </div>
+                            <div class="img-reels">
+                                <img class="foto-player-reels" src="assets/img/Board.png" alt="" data-video-id="1070110869">
+                            </div>
+                            <div class="img-reels">
+                                <img class="foto-player-reels" src="/assets/img/img-port-1.JPG" alt="">
+                            </div>
+                            <div class="img-reels">
+                                <img class="foto-player-reels" src="assets/img/Board.png" alt="" data-video-id="1070110869">
+                            </div>
+
+                            <div class="navigation-auto-reels">
+                                <div class="auto-btn1-reels"></div>
+                                <div class="auto-btn2-reels"></div>
+                                <div class="auto-btn3-reels"></div>
+                            </div>
+                        </div>
+                        <div class="manual-navigation-reels">
+                            <label for="radio1-reels" class="manual-btn-reels"></label>
+                            <label for="radio2-reels" class="manual-btn-reels"></label>
+                            <label for="radio3-reels" class="manual-btn-reels"></label>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a class="btn-padrao" href="">Entre em contato</a>
+            <div class="botao-portifolio">
+                <a class="btn-padrao" href="">Entre em contato</a>
+            </div>
 
             <div id="modal" class="modal">
                 <span class="close" id="closeModal">&times;</span>
@@ -366,22 +397,16 @@
     <footer>
         <div class="conteudo-footer">
             <p class="titulo-footer">Vamos trabalhar juntos?</p>
-            <a class="rede-social" href="">
-                <svg class="icone-rede-social" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                </svg>                    
+            <a class="rede-social" href="#">
+                <img src="/assets/img/icones/instagram-icon.svg" alt="">                   
                 <p class="texto-rede-social"><span class="bold">@midia2you</span></p>
             </a>
-            <a class="rede-social" href="">
-                <svg class="icone-rede-social" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                </svg>
+            <a class="rede-social" href="#">
+                <img src="/assets/img/icones/whatsapp-icon.svg" alt="">
                 <p class="texto-rede-social"><span class="bold">(65) 9 9335-7046</span> - Fernanda</p>
             </a>
-            <a class="rede-social" href="">
-                <svg class="icone-rede-social" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                </svg>                    
+            <a class="rede-social" href="#">
+                <img src="/assets/img/icones/whatsapp-icon.svg" alt="">                    
                 <p class="texto-rede-social"><span class="bold">(65) 9 9335-7046</span> - Lorena</p>
             </a>
         </div>
@@ -389,8 +414,9 @@
     </footer>
 
     <script src="assets/js/header.js" defer></script>
-    <script src="assets/js/planos.js" defer"></script>
+    <script src="assets/js/carrossel.js" defer"></script>
     <script src="assets/js/realtime.js" defer></script>
     <script src="assets/js/imagem.js" defer></script>
+    
 </body>
 </html>

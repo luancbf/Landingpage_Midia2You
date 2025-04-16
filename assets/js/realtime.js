@@ -1,8 +1,8 @@
 // Obtém os elementos
 var modal = document.getElementById("videoModal");
 var iframe = document.getElementById("videoIframe");
-var photos = document.querySelectorAll(".foto-player");
-var closeBtn = document.getElementsByClassName("close")[0];
+var photos = document.querySelectorAll(".foto-player, .foto-player-reels");
+var closeBtn = document.getElementsByClassName("close-player")[0];
 
 // Quando qualquer foto for clicada, abre o modal com o vídeo correspondente
 photos.forEach(function(photo) {
@@ -17,12 +17,4 @@ photos.forEach(function(photo) {
 closeBtn.onclick = function() {
     modal.style.display = "none";
     iframe.src = ""; // Remove o vídeo para evitar que continue tocando
-}
-
-// Quando clicar fora do modal, também fecha o modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        iframe.src = ""; // Remove o vídeo
-    }
 }

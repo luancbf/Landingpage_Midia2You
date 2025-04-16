@@ -27,16 +27,27 @@
 
 @media screen and (max-width: 480px){
     .decoracao-svg{
-        max-width: 550px;
+        max-width: 600px;
     }
     .svg1{
-        left: -16rem;
+        left: -18rem;
         top: 60vh;
     }
     .svg2{
         left: 9rem;
         right: -40rem;
-        top: 1200px;
-        transform: rotate(-25deg);
+        top: 70rem;
+        transform: rotate(-20deg);
+    }
+    .svg3{
+        left: -20rem;
+        top: 130rem;
+        transform: rotate(-10deg);
+    }
+    .svg4{
+        left: 9rem;
+        right: -20rem;
+        top: 220rem;
+        transform: rotate(-10deg);
     }
 }
