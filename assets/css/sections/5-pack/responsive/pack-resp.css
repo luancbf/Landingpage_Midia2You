@@ -2,26 +2,27 @@
     .pack{
         flex-direction: column;
         gap: 20px;
+        margin: 5rem 0;
     }
     .img-pack{
-        width: 400px;
+        width: 95%;
     }
     .container-pack{
         align-items: center;
     }
     .titulo-pack{
-        font-size: 40px;
+        font-size: 2.5rem;
         margin-bottom: 5px;
     }
     .logo-pack{
-        width: 80px;
-        margin-left: 30px;
+        width: 5rem;
         align-self: flex-start;
     }
     .texto-pack{
         align-items: flex-start;
-        font-size: 15px;
-        margin: 25px 30px 25px;
+        font-size: 17px;
+        margin: 25px 30px;
+        white-space: normal;
     }
     .botao-pack{
         width: 60%;

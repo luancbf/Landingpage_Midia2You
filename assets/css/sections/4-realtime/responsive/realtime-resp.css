@@ -3,6 +3,7 @@
         width: 100vw;
         height: 100%;
         gap: 10px;
+        margin: 5rem 0;
     }
     .titulo-realtime{
         font-size: 2rem;
@@ -20,14 +21,15 @@
         gap: 20px;
     }
     .texto-realtime{
-        width: 80vw;
+        width: 80%;
         font-size: 1rem;
         margin-right: 0;
     }
     .slider-realtime{
         width: 100vw;
-        height: 6rem;
-        padding: 0 20px 0 20px;
+        height: 5rem;
+        padding: 10px 20px;
+        justify-content: space-between;
         gap: 20px;
     }
     .conteudo-slider-realtime{
