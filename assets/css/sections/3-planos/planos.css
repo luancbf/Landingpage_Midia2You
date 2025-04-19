@@ -31,8 +31,8 @@
 .elemento{
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     flex-shrink: 0;
-    position: relative;
 }
 
 
@@ -40,6 +40,7 @@
 .fundo-elemento-2,
 .fundo-elemento-3{
     width: 350px;
+    height: 200px;
     display: flex;
     justify-content: center;
     background-color: var(--color-2);
@@ -55,19 +56,10 @@
     justify-content: center;
     background-color: var(--color-1);
     border-radius: 40px;
-    position: absolute;
-    top: 100px;
+    margin-top: -6rem;
     z-index: 2;
+    padding: 1rem;
 }
-
-.fundo-elemento-1{height: 350px;}
-.frente-elemento-1{height: 250px;}
-
-.fundo-elemento-2{height: 420px;}
-.frente-elemento-2{height: 320px;}
-
-.fundo-elemento-3{height: 590px;}
-.frente-elemento-3{height: 490px;}
 
 .titulo-elemento{
     font-family: var(--montserrat);

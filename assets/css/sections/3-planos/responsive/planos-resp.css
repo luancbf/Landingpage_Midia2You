@@ -14,17 +14,14 @@
 
     .slider-planos{
         width: 300px;
-        height: 425px;
         justify-content: flex-start;
     }
     .slides-planos{
         width: 1100px;
-        height: 425px;
         gap: 50px;
     }
     .elemento{
         transition: 1s;
-        height: 425px;
     }
     .manual-navigation{
         position: absolute;
@@ -103,24 +100,10 @@
     .frente-elemento-1,
     .frente-elemento-2,
     .frente-elemento-3{
-        padding: 1rem;
         width: 300px;
+        margin-top: -7.5rem;
         border-radius: 30px;
-        top: 80px;
     }
-    .fundo-elemento-1,
-    .fundo-elemento-2,
-    .fundo-elemento-3{
-        height: 150px;
-    }
-    
-    .frente-elemento-1,
-    .frente-elemento-2,
-    .frente-elemento-3{
-        height: auto;
-    }
-
-    .fundo-elemento-3{height: 400px;}
 
     .titulo-elemento{
         font-size: 25px;
