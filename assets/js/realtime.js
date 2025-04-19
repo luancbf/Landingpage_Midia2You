@@ -8,7 +8,7 @@ var closeBtn = document.getElementsByClassName("close-player")[0];
 photos.forEach(function(photo) {
     photo.onclick = function() {
         var videoId = photo.getAttribute("data-video-id");
-        iframe.src = "https://player.vimeo.com/video/" + videoId + "?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479";
+        iframe.src = "https://player.vimeo.com/video/" + videoId + "?autoplay=1&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479";
         modal.style.display = "block";
     };
 });
