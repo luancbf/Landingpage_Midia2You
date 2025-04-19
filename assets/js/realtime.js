@@ -1,7 +1,7 @@
 // Obtém os elementos
 var modal = document.getElementById("videoModal");
 var iframe = document.getElementById("videoIframe");
-var photos = document.querySelectorAll(".foto-player, .foto-player-reels");
+var photos = document.querySelectorAll(".foto-player, .foto-player-reels, .foto-player-story");
 var closeBtn = document.getElementsByClassName("close-player")[0];
 
 // Quando qualquer foto for clicada, abre o modal com o vídeo correspondente
