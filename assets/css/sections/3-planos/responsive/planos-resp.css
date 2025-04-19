@@ -14,17 +14,17 @@
 
     .slider-planos{
         width: 300px;
-        height: 415px;
+        height: 425px;
         justify-content: flex-start;
     }
     .slides-planos{
         width: 1100px;
-        height: 415px;
+        height: 425px;
         gap: 50px;
     }
     .elemento{
         transition: 1s;
-        height: 415px;
+        height: 425px;
     }
     .manual-navigation{
         position: absolute;
