@@ -19,10 +19,12 @@
     }
     .slides-planos{
         width: 1100px;
+        height: 415px;
         gap: 50px;
     }
     .elemento{
         transition: 1s;
+        height: 415px;
     }
     .manual-navigation{
         position: absolute;
