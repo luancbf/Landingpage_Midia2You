@@ -83,8 +83,8 @@
 /* Botão de fechar */
 .close-player {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2rem;
+    right: 2rem;
     color: white;
     font-size: 40px;
     font-weight: bold;

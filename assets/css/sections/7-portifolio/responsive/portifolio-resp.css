@@ -100,10 +100,26 @@
     .conteudo-carrossel{
         gap: 30px;
     }
-    .img-carrossel{
-        width: 90%;
+    .galeria-horizontal-1,
+    .galeria-horizontal-2 {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 0.5rem;
     }
 
+    .galeria-horizontal-1::-webkit-scrollbar,
+    .galeria-horizontal-2::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .galeria-horizontal-1::-webkit-scrollbar-thumb,
+    .galeria-horizontal-2::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+    }
+    .img-carrossel{
+        max-width: 300px;
+    }
 
     /*REELS*/
     .slider-reels{

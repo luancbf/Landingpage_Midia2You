@@ -68,18 +68,28 @@
     gap: 20px;
 }
 .conteudo-carrossel{
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 50px;
 }
-.img-carrossel{
-    width: 80%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s; /* Efeito de transição */
+.galeria-horizontal-1,
+.galeria-horizontal-2 {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory; /* opcional pra scroll suave */
+}
+
+/* Estilo das imagens */
+.img-carrossel {
+    max-width: 250px;
+    flex: 0 0 auto;
+}
+
+.img-carrossel img {
+    width: 100%;
+    object-fit: cover;   /* cobre sem distorcer */
+    display: block;
 }
 
 /*REELS*/
