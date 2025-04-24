@@ -4,10 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 4rem;
 }
 .img-pack{
-    width: 800px;
+    width: 40rem;
 }
 .container-pack{
     display: flex;
@@ -17,19 +17,20 @@
 }
 .titulo-pack{
     font-family: var(--montserrat);
-    font-size: 100px;
+    font-size: 5rem;
     line-height: 0.9;
     color: var(--color-2);
     white-space: pre-line;
     margin-bottom: 20px;
 }
 .logo-pack{
-    width: 180px;
+    width: 9rem;
 }
 .texto-pack{
     font-family: var(--montserrat);
-    font-size: 25px;
+    font-size: 1.5rem;
     color: var(--color-2);
     white-space: pre-line;
-    margin: 25px 0 25px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }

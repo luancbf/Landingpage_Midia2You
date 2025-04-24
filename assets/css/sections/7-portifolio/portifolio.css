@@ -5,11 +5,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 3rem;
+    margin-bottom: 5rem;
 }
 .titulo-portifolio{
-    font-size: 70px;
+    font-size: 4rem;
     font-family: var(--brown);
     color: var(--color-2);
 }
@@ -18,11 +18,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 60px;
+    gap: 3rem;
 }
 .titulo-conteudo-portifolio{
     font-family: var(--montserrat);
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: 600;
     color: var(--color-2);
 }
@@ -33,30 +33,35 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.5rem;
 }
 
 .slider-story{
     width: 100%;
+    position: static;
     margin: 0 auto;
     display: flex;
     overflow: hidden;
 }
 .slides-story{
     display: flex;
-    gap: 60px;
+    gap: 2rem;
 }
 .slides-story input{
     display: none;
 }
 .img-story{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-shrink: 0;
     position: relative;
-    width: 260px;
+    width: 16.2rem;
     transition: transform 1s; /* Efeito de transição */
     cursor: pointer;
+}
+.img-story img{
+    width: 100%;
+    height: auto;
 }
 
 /*CARROSSEL*/
@@ -65,12 +70,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.2rem;
 }
 .conteudo-carrossel{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.2rem;
 }
 .galeria-horizontal-1,
 .galeria-horizontal-2 {
@@ -82,7 +87,7 @@
 
 /* Estilo das imagens */
 .img-carrossel {
-    max-width: 250px;
+    max-width: 18rem;
     flex: 0 0 auto;
 }
 
@@ -98,7 +103,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.5rem;
 }
 .slider-reels{
     width: 100%;
@@ -108,7 +113,7 @@
 }
 .slides-reels{
     display: flex;
-    gap: 60px;
+    gap: 2rem;
 }
 .slides-reels input{
     display: none;
@@ -118,9 +123,13 @@
     align-items: flex-start;
     flex-shrink: 0;
     position: relative;
-    width: 260px;
+    width: 16.2rem;
     transition: transform 1s; /* Efeito de transição */
     cursor: pointer;
+}
+.img-reels img{
+    width: 100%;
+    height: auto;
 }
 
 

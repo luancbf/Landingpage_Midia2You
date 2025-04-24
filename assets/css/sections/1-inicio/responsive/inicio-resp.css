@@ -1,6 +1,7 @@
 @media screen and (max-width: 480px){
     .inicio{
         gap: 10px;
+        margin: 18rem 0;
     }
     .logo-inicio{
         width: 80%;

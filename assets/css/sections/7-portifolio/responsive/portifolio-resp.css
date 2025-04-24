@@ -22,11 +22,6 @@
         width: 160px;
         position: relative;
         transition: 1s;
-        align-items: center;
-    }
-    .img-story img{
-        width: 100%;
-        height: auto;
     }
     .manual-navigation-story{
         position: absolute;
@@ -133,10 +128,6 @@
         width: 160px;
         position: relative;
         transition: 1s;
-    }
-    .img-reels img{
-        width: 100%;
-        height: auto;
     }
     .manual-navigation-reels{
         position: absolute;

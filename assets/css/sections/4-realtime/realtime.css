@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
 }
 .container-titulo-realtime{
     display: flex;
@@ -28,8 +28,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+    gap: 8rem;
 }
 
 /* Estilo da foto */
@@ -37,14 +37,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    margin: 0 auto;
+    gap: 2rem;
 }
 
 .foto-player {
     width: 15rem;
     cursor: pointer;
-    margin: 0.8rem;
 }
 .conteudo-realtime{
     display: flex;
@@ -54,11 +52,10 @@
     gap: 2rem;
 }
 .texto-realtime{
-    width: 54rem;
+    width: 50rem;
     font-family: var(--montserrat);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--color-2);
-    margin-right: 6rem;
 }
 .slider-realtime{
     width: 100%;
@@ -66,8 +63,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
     background-color: var(--color-1);
-    gap: 7rem;
+    gap: 5rem;
 }
 .conteudo-slider-realtime{
     font-family: var(--montserrat);
