@@ -1,20 +1,20 @@
 header {
     width: 100vw;
-    height: 100px;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-1);
 }
 .logo{
-    width: 150px;
-    margin: 75px;
+    width: 9.4rem;
+    margin: 0 3rem;
 }
 .logo img{
     width: 100%;
 }
 .nav{
-    margin: 0 40px;
+    margin: 0 2rem;
 }
 .nav ul{
     list-style: none;
@@ -22,11 +22,11 @@ header {
 }
 
 .nav ul li{
-    margin: 0 25px;
+    margin: 0 1.5rem;
 }
 .nav ul li a {
     font-family: var(--montserrat);
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--color-2);
     text-decoration: none;
@@ -34,7 +34,4 @@ header {
 
 .hamburger {
     display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: var(--color-2);
 }

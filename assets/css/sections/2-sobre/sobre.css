@@ -1,11 +1,12 @@
 .sobre{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.4rem;
+    margin: 0 5rem;
 }
 .titulo-sobre{
     font-size: 70px;
@@ -19,11 +20,11 @@
     justify-content: space-between;
 }
 .texto-sobre{
-    width: 750px;
-    font-size: 35px;
+    width: 46rem;
+    font-size: 2rem;
     font-family: var(--montserrat);
     color: var(--color-2);
-    margin-left: 200px
+    margin-left: 10rem
 }
 .img-sobre{
     width: 800px;

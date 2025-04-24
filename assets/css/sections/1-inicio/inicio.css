@@ -1,22 +1,23 @@
 .inicio{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 5rem;
+    margin: 0 4rem;
 }
 .conteudo-inicio{
-    width: 940px;
+    width: 45rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2rem;
 
 }
 .texto-inicio{
     color: var(--color-2);
     font-family: var(--montserrat);
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 400;
     white-space: pre-line;
 }
@@ -25,5 +26,5 @@
     gap: 50px;
 }
 .logo-inicio{
-    width: 650px;
+    width: 35rem;
 }
