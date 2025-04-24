@@ -5,15 +5,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.5rem;
 }
 .titulo-planos{
-    font-size: 70px;
+    font-size: 3.5rem;
+    text-align: center;
     font-family: var(--brown);
     color: var(--color-2);
 }
-
-
 .slider-planos{
     width: 100%;
     margin: 0 auto;
@@ -39,8 +38,8 @@
 .fundo-elemento-1,
 .fundo-elemento-2,
 .fundo-elemento-3{
-    width: 350px;
-    height: 200px;
+    width: 22rem;
+    height: 12.5rem;
     display: flex;
     justify-content: center;
     background-color: var(--color-2);
@@ -50,7 +49,7 @@
 .frente-elemento-1,
 .frente-elemento-2,
 .frente-elemento-3{
-    width: 350px;
+    width: 22rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;

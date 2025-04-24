@@ -25,15 +25,15 @@
 }
 body{
     position: relative;
-    font-size: 100%;
     list-style-type: none;
     background-color: var(--color-3);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 html {
     scroll-behavior: smooth;
     position: relative;
     overflow-x: auto;
+    font-size: 100%;
 }
 h1{
     font-weight: normal;

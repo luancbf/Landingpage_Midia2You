@@ -6,11 +6,11 @@
 }
 /* Posicionamento dos SVGs */
 .svg1 {
-    top: 450px;
+    top: 300px;
     left: -690px;
 }
 .svg2{
-    left: 1400px;
+    right: -800px;
     top: 1300px;
     transform: rotate(-160deg);
 }
@@ -20,7 +20,7 @@
     transform: rotate(-30deg);
 }
 .svg4{
-    left: 1300px;
+    right: -800px;
     top: 4400px;
     transform: rotate(-30deg);
 }

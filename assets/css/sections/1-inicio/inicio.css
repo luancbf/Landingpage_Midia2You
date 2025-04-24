@@ -1,30 +1,33 @@
 .inicio{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
+    margin: 20rem 2rem;
     gap: 5rem;
-    margin: 0 4rem;
 }
 .conteudo-inicio{
-    width: 45rem;
+    width: 38rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
 }
 .texto-inicio{
     color: var(--color-2);
     font-family: var(--montserrat);
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 400;
     white-space: pre-line;
 }
 .botao-inicio{
     display: flex;
-    gap: 50px;
+    gap: 2.5rem;
 }
 .logo-inicio{
     width: 35rem;
+}
+.logo-inicio img{
+    width: 100%;
 }

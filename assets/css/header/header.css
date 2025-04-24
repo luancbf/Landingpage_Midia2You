@@ -5,6 +5,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-1);
+    position: fixed;
+    z-index: 5;
 }
 .logo{
     width: 9.4rem;
@@ -26,7 +28,7 @@ header {
 }
 .nav ul li a {
     font-family: var(--montserrat);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--color-2);
     text-decoration: none;

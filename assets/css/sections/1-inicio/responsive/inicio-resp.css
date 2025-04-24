@@ -1,6 +1,5 @@
 @media screen and (max-width: 480px){
     .inicio{
-        flex-direction: column-reverse;
         gap: 10px;
     }
     .logo-inicio{
@@ -23,25 +22,5 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px){
-    .inicio{
-        flex-direction: column-reverse;
-        gap: 10px;
-    }
-    .logo-inicio{
-        width: 80%;
-    }
-    .conteudo-inicio{
-        width: 80%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .texto-inicio{
-        font-size: 35px;
-    }
-    .botao-inicio{
-        width: 70%;
-        justify-content: center;
-        flex-direction: column;
-        gap: 20px;
-    }
+    
 }
