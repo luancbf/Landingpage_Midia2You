@@ -6,7 +6,6 @@
     }
     .titulo-planos{
         width: 90%;
-        text-align: center;
         font-size: 2rem;
         margin-bottom: 3rem;
     }
@@ -122,4 +121,116 @@
 
 @media (min-width: 481px) and (max-width: 768px){
     
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .planos{
+        height: auto;
+        gap: 2rem;
+        margin: 6rem 0;
+    }
+    .titulo-planos{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .slider-planos{
+        width: 25rem;
+        justify-content: flex-start;
+    }
+    .slides-planos{
+        gap: 3rem;
+    }
+    .elemento{
+        transition: 1s;
+    }
+    .manual-navigation{
+        position: absolute;
+        width: 300px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    .manual-btn{
+        border: 2px solid var(--color-2);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 30px;
+    }
+    .manual-btn:hover{
+        background-color: var(--color-2);
+    }
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -28rem;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -56rem;
+    }
+
+    .navigation-auto div{
+        border: 2px solid var(--color-2);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .navigation-auto{
+        position: absolute;
+        width: 300px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background-color: var(--color-2);
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background-color: var(--color-2);
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background-color: var(--color-2);
+    }
+
+    #radio1:checked ~ .slides-planos { 
+        transform: translateX(0);
+    }
+    #radio2:checked ~ .slides-planos {
+        transform: translateX(-28rem);
+    }
+    #radio3:checked ~ .slides-planos {
+        transform: translateX(-56rem);
+    }
+
+    .fundo-elemento-1,
+    .fundo-elemento-2,
+    .fundo-elemento-3{
+        width: 25rem;
+        border-radius: 30px;
+    }
+    .frente-elemento-1,
+    .frente-elemento-2,
+    .frente-elemento-3{
+        width: 25rem;
+        margin-top: -7.5rem;
+        border-radius: 30px;
+    }
+
+    .titulo-elemento{
+        font-size: 2rem;
+        margin-top: 25px;
+    }
+    .texto-elemento{
+        font-size: 1.4rem;
+        white-space: none;
+    }
 }

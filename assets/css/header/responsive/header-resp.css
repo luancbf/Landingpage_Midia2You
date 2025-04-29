@@ -36,25 +36,20 @@
         color: var(--color-2);
     }
 }
-
 @media (min-width: 481px) and (max-width: 768px){
     header{
-        height: 130px;
+        height: 5rem;
     }
     .logo{
-        width: 150px;
+        width: 6rem;
     }
-    .hamburger{
-        font-size: 50px;
-    }
-    
     .nav ul {
         height: auto;
         display: none;
         align-items: center;
         flex-direction: column;
         position: absolute;
-        top: 130px; /* Altura do header */
+        top: 5rem;
         left: 0;
         right: 0;
         background-color: var(--color-1);
@@ -62,7 +57,7 @@
         gap: 5px;
     }
     .nav ul li a{
-        font-size: 25px;
+        font-size: 1.5rem;
     }
     .nav ul.active {
         display: flex;
@@ -70,6 +65,43 @@
 
     .hamburger {
         display: block;
+        font-size: 2.5rem;
         margin-right: 30px;
     }
+}
+/* Tablet - modo retrato */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .logo{
+        width: 8rem;
+    }
+    .nav ul {
+        height: auto;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        background-color: var(--color-1);
+        padding: 10px 0 20px;
+        gap: 5px;
+    }
+    .nav ul li a{
+        font-size: 1.5rem;
+    }
+    .nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 3rem;
+        margin-right: 3rem;
+    }
+}
+  
+/* Tablet - modo paisagem */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /*nadda se altera*/
 }
