@@ -1,0 +1,137 @@
+---
+import BtnPadrao from "../BtnPadrao.astro";
+---
+
+<section
+	id="planos"
+	class="reveal w-full min-h-screen-safe flex items-center justify-center flex-col gap-10 mobile:h-auto mobile:gap-5 mobile:my-24 mobile:mx-0 carousel:h-auto carousel:gap-12 carousel:my-24 carousel:mx-0"
+>
+	<h1
+		class="text-[3.5rem] text-center font-brown text-brand-2 mobile:w-[90%] mobile:text-[2rem] mobile:mb-12 carousel:w-[80%] carousel:mb-12"
+	>
+		Confira nossos planos mensais
+	</h1>
+	<div
+		class="w-full mx-auto flex overflow-hidden justify-center mobile:w-75 mobile:justify-start carousel:w-100 carousel:justify-start"
+	>
+		<div class="slides-planos flex gap-15 mobile:w-275 mobile:gap-12.5 carousel:gap-12">
+			<input type="radio" name="radio-btn" id="radio1" checked class="peer/r1 hidden" />
+			<input type="radio" name="radio-btn" id="radio2" class="peer/r2 hidden" />
+			<input type="radio" name="radio-btn" id="radio3" class="peer/r3 hidden" />
+
+			<div
+				class="group flex items-start flex-col shrink-0
+				mobile:transition-all mobile:duration-700 mobile:ease-[cubic-bezier(0.34,1.56,0.64,1)] mobile:peer-checked/r1:ml-0 mobile:peer-checked/r2:-ml-87.5 mobile:peer-checked/r3:-ml-175
+				carousel:transition-all carousel:duration-700 carousel:ease-[cubic-bezier(0.34,1.56,0.64,1)] carousel:peer-checked/r1:ml-0 carousel:peer-checked/r2:-ml-112 carousel:peer-checked/r3:-ml-224"
+			>
+				<div
+					class="w-88 h-50 flex justify-center bg-brand-2 rounded-[40px] z-1 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:scale-[1.02] mobile:w-75 mobile:rounded-[30px] carousel:w-100 carousel:rounded-[35px]"
+				>
+					<p
+						class="font-montserrat text-[35px] text-brand-3 mt-7.5 mobile:text-[25px] mobile:mt-6.25 carousel:text-[2rem] carousel:mt-6.25"
+					>
+						Plano <span class="font-semibold">Básico</span>
+					</p>
+				</div>
+
+				<div
+					class="w-88 flex items-start justify-center flex-col bg-brand-1 rounded-[40px] -mt-24 z-2 p-10 font-montserrat text-[20px] text-brand-2 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:scale-[1.02] mobile:w-75 mobile:-mt-30 mobile:rounded-[30px] mobile:p-6 mobile:text-[1rem] carousel:w-100 carousel:-mt-28 carousel:rounded-[35px] carousel:p-6 carousel:text-[1.5rem]"
+				>
+					<p><span class="font-semibold">• Gravações mensais.</span></p>
+					<p><span class="font-semibold">• 2 posts</span> estáticos.</p>
+					<p><span class="font-semibold">• 2 posts</span> carrossel.</p>
+					<p><span class="font-semibold">• Cronograma mensal</span> de postagem aprovado pelo cliente.</p>
+				</div>
+			</div>
+			<div class="group flex items-start flex-col shrink-0">
+				<div
+					class="w-88 h-50 flex justify-center bg-brand-2 rounded-[40px] z-1 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:scale-[1.02] mobile:w-75 mobile:rounded-[30px] carousel:w-100 carousel:rounded-[35px]"
+				>
+					<p
+						class="font-montserrat text-[35px] text-brand-3 mt-7.5 mobile:text-[25px] mobile:mt-6.25 carousel:text-[2rem] carousel:mt-6.25"
+					>
+						Plano <span class="font-semibold">Estratégico</span>
+					</p>
+				</div>
+
+				<div
+					class="w-88 flex items-start justify-center flex-col bg-brand-1 rounded-[40px] -mt-24 z-2 p-10 font-montserrat text-[20px] text-brand-2 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:scale-[1.02] mobile:w-75 mobile:-mt-30 mobile:rounded-[30px] mobile:p-6 mobile:text-[1rem] carousel:w-100 carousel:-mt-28 carousel:rounded-[35px] carousel:p-6 carousel:text-[1.5rem]"
+				>
+					<p><span class="font-semibold">• Gravações mensais.</span></p>
+					<p><span class="font-semibold">• 2 posts</span> estáticos.</p>
+					<p><span class="font-semibold">• 2 posts</span> carrossel.</p>
+					<p><span class="font-semibold">• 1 reels</span> por semana.</p>
+					<p><span class="font-semibold">• R$100,00</span> de tráfego pago incluso</p>
+					<p><span class="font-semibold">• Cronograma mensal</span> de postagem aprovado pelo cliente.</p>
+				</div>
+			</div>
+			<div class="group flex items-start flex-col shrink-0">
+				<div
+					class="w-88 h-50 flex justify-center bg-brand-2 rounded-[40px] z-1 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:scale-[1.02] mobile:w-75 mobile:rounded-[30px] carousel:w-100 carousel:rounded-[35px]"
+				>
+					<p
+						class="font-montserrat text-[35px] text-brand-3 mt-7.5 mobile:text-[25px] mobile:mt-6.25 carousel:text-[2rem] carousel:mt-6.25"
+					>
+						Plano <span class="font-semibold">Avançado</span>
+					</p>
+				</div>
+
+				<div
+					class="w-88 flex items-start justify-center flex-col bg-brand-1 rounded-[40px] -mt-24 z-2 p-10 font-montserrat text-[20px] text-brand-2 transition-transform duration-500 ease-out group-hover:-translate-y-2 group-hover:scale-[1.02] mobile:w-75 mobile:-mt-30 mobile:rounded-[30px] mobile:p-6 mobile:text-[1rem] carousel:w-100 carousel:-mt-28 carousel:rounded-[35px] carousel:p-6 carousel:text-[1.5rem]"
+				>
+					<p><span class="font-semibold">• Gravações mensais.</span></p>
+					<p><span class="font-semibold">• 3 posts</span> estáticos.</p>
+					<p><span class="font-semibold">• 3 posts</span> carrossel.</p>
+					<p><span class="font-semibold">• 1 reels</span> por semana.</p>
+					<p><span class="font-semibold">• R$100,00</span> de tráfego pago incluso.</p>
+					<p>
+						<span class="font-semibold">• Criação de roteiros</span> personalizados para cada tema de vídeo ou posts.
+					</p>
+					<p><span class="font-semibold">• Cronograma mensal</span> de postagem aprovado pelo cliente.</p>
+				</div>
+			</div>
+
+			<div
+				class="mobile:absolute mobile:w-75 mobile:-mt-10 mobile:flex mobile:justify-center mobile:peer-checked/r1:[&_.auto-btn1]:bg-brand-2 mobile:peer-checked/r2:[&_.auto-btn2]:bg-brand-2 mobile:peer-checked/r3:[&_.auto-btn3]:bg-brand-2
+				carousel:absolute carousel:w-100 carousel:-mt-10 carousel:flex carousel:justify-center carousel:peer-checked/r1:[&_.auto-btn1]:bg-brand-2 carousel:peer-checked/r2:[&_.auto-btn2]:bg-brand-2 carousel:peer-checked/r3:[&_.auto-btn3]:bg-brand-2"
+			>
+				<div
+					class="auto-btn1 mobile:border-2 mobile:border-brand-2 mobile:p-1.25 mobile:rounded-[10px] mobile:cursor-pointer mobile:transition-all mobile:duration-1000 mobile:mr-7.5 carousel:border-2 carousel:border-brand-2 carousel:p-1.25 carousel:rounded-[10px] carousel:cursor-pointer carousel:transition-all carousel:duration-1000 carousel:mr-7.5"
+				>
+				</div>
+				<div
+					class="auto-btn2 mobile:border-2 mobile:border-brand-2 mobile:p-1.25 mobile:rounded-[10px] mobile:cursor-pointer mobile:transition-all mobile:duration-1000 mobile:mr-7.5 carousel:border-2 carousel:border-brand-2 carousel:p-1.25 carousel:rounded-[10px] carousel:cursor-pointer carousel:transition-all carousel:duration-1000 carousel:mr-7.5"
+				>
+				</div>
+				<div
+					class="auto-btn3 mobile:border-2 mobile:border-brand-2 mobile:p-1.25 mobile:rounded-[10px] mobile:cursor-pointer mobile:transition-all mobile:duration-1000 carousel:border-2 carousel:border-brand-2 carousel:p-1.25 carousel:rounded-[10px] carousel:cursor-pointer carousel:transition-all carousel:duration-1000"
+				>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="mobile:absolute mobile:w-75 mobile:-mt-10 mobile:flex mobile:justify-center carousel:absolute carousel:w-100 carousel:-mt-10 carousel:flex carousel:justify-center"
+		>
+			<label
+				for="radio1"
+				class="mobile:border-2 mobile:border-brand-2 mobile:p-1.25 mobile:rounded-[10px] mobile:cursor-pointer mobile:transition-all mobile:duration-1000 mobile:hover:bg-brand-2 mobile:mr-7.5 carousel:border-2 carousel:border-brand-2 carousel:p-1.25 carousel:rounded-[10px] carousel:cursor-pointer carousel:transition-all carousel:duration-1000 carousel:hover:bg-brand-2 carousel:mr-7.5"
+			></label>
+			<label
+				for="radio2"
+				class="mobile:border-2 mobile:border-brand-2 mobile:p-1.25 mobile:rounded-[10px] mobile:cursor-pointer mobile:transition-all mobile:duration-1000 mobile:hover:bg-brand-2 mobile:mr-7.5 carousel:border-2 carousel:border-brand-2 carousel:p-1.25 carousel:rounded-[10px] carousel:cursor-pointer carousel:transition-all carousel:duration-1000 carousel:hover:bg-brand-2 carousel:mr-7.5"
+			></label>
+			<label
+				for="radio3"
+				class="mobile:border-2 mobile:border-brand-2 mobile:p-1.25 mobile:rounded-[10px] mobile:cursor-pointer mobile:transition-all mobile:duration-1000 mobile:hover:bg-brand-2 carousel:border-2 carousel:border-brand-2 carousel:p-1.25 carousel:rounded-[10px] carousel:cursor-pointer carousel:transition-all carousel:duration-1000 carousel:hover:bg-brand-2"
+			></label>
+		</div>
+	</div>
+	<div class="mobile:w-[60%] mobile:gap-5">
+		<BtnPadrao
+			href="https://wa.me/5565993357046?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20%F0%9F%A4%A9%0ATenho%20interesse%20no%20servi%C3%A7o%20de%20voc%C3%AAs%20%F0%9F%8E%AC"
+		>
+			Tenho interesse
+		</BtnPadrao>
+	</div>
+</section>

@@ -1,0 +1,79 @@
+---
+
+---
+
+<header
+	id="site-header"
+	class="w-screen h-24 flex justify-between items-center bg-brand-1 fixed z-5 transition-shadow duration-300 [&.is-scrolled]:shadow-[0_4px_24px_rgba(0,0,0,0.12)] mobile:h-16 tablet-sm:h-20"
+>
+	<div class="logo w-[9.4rem] mx-12 mobile:w-16 mobile:m-7.5 tablet-sm:w-24 tablet-portrait:w-32">
+		<img class="w-full" src="/assets/img/logom2y-02.png" alt="Logo da Midia2You" />
+	</div>
+	<nav class="nav mx-8">
+		<ul
+			class="list-none flex
+			mobile:h-auto mobile:hidden mobile:items-center mobile:flex-col mobile:absolute mobile:top-16 mobile:left-0 mobile:right-0 mobile:bg-brand-1 mobile:pt-2.5 mobile:px-0 mobile:pb-5 mobile:[&.active]:flex mobile:[&.active]:gap-1.25
+			tablet-sm:h-auto tablet-sm:hidden tablet-sm:items-center tablet-sm:flex-col tablet-sm:absolute tablet-sm:top-20 tablet-sm:left-0 tablet-sm:right-0 tablet-sm:bg-brand-1 tablet-sm:pt-2.5 tablet-sm:px-0 tablet-sm:pb-5 tablet-sm:gap-1.25 tablet-sm:[&.active]:flex
+			tablet-portrait:h-auto tablet-portrait:hidden tablet-portrait:items-center tablet-portrait:flex-col tablet-portrait:absolute tablet-portrait:top-20 tablet-portrait:left-0 tablet-portrait:right-0 tablet-portrait:bg-brand-1 tablet-portrait:pt-2.5 tablet-portrait:px-0 tablet-portrait:pb-5 tablet-portrait:gap-1.25 tablet-portrait:[&.active]:flex"
+		>
+			<li class="mx-6">
+				<a
+					class="relative font-montserrat text-[1.2rem] font-semibold text-brand-2 no-underline transition-opacity duration-300 hover:opacity-70 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-brand-2 after:transition-all after:duration-300 hover:after:w-full mobile:text-[1rem] tablet-sm:text-[1.5rem] tablet-portrait:text-[1.5rem]"
+					href="#inicio">Início</a
+				>
+			</li>
+			<li class="mx-6">
+				<a
+					class="relative font-montserrat text-[1.2rem] font-semibold text-brand-2 no-underline transition-opacity duration-300 hover:opacity-70 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-brand-2 after:transition-all after:duration-300 hover:after:w-full mobile:text-[1rem] tablet-sm:text-[1.5rem] tablet-portrait:text-[1.5rem]"
+					href="#planos">Nossos planos</a
+				>
+			</li>
+			<li class="mx-6">
+				<a
+					class="relative font-montserrat text-[1.2rem] font-semibold text-brand-2 no-underline transition-opacity duration-300 hover:opacity-70 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-brand-2 after:transition-all after:duration-300 hover:after:w-full mobile:text-[1rem] tablet-sm:text-[1.5rem] tablet-portrait:text-[1.5rem]"
+					href="#realtime">Real time</a
+				>
+			</li>
+			<li class="mx-6">
+				<a
+					class="relative font-montserrat text-[1.2rem] font-semibold text-brand-2 no-underline transition-opacity duration-300 hover:opacity-70 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-brand-2 after:transition-all after:duration-300 hover:after:w-full mobile:text-[1rem] tablet-sm:text-[1.5rem] tablet-portrait:text-[1.5rem]"
+					href="#pack">Pack de figurinhas</a
+				>
+			</li>
+			<li class="mx-6">
+				<a
+					class="relative font-montserrat text-[1.2rem] font-semibold text-brand-2 no-underline transition-opacity duration-300 hover:opacity-70 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-brand-2 after:transition-all after:duration-300 hover:after:w-full mobile:text-[1rem] tablet-sm:text-[1.5rem] tablet-portrait:text-[1.5rem]"
+					href="#portifolio">Portifólio</a
+				>
+			</li>
+		</ul>
+	</nav>
+	<div
+		id="hamburger"
+		class="hidden mobile:block mobile:text-[2rem] mobile:mr-5 mobile:cursor-pointer mobile:text-brand-2 tablet-sm:block tablet-sm:text-[2.5rem] tablet-sm:mr-7.5 tablet-portrait:block tablet-portrait:text-[3rem] tablet-portrait:mr-12"
+	>
+		&#9776;
+	</div>
+</header>
+
+<script>
+	(function () {
+		const hamburger = document.getElementById("hamburger");
+		const nav = document.querySelector(".nav ul");
+
+		if (hamburger && nav) {
+			hamburger.addEventListener("click", function () {
+				nav.classList.toggle("active");
+			});
+		}
+
+		const header = document.getElementById("site-header");
+		if (header) {
+			const onScroll = () => {
+				header.classList.toggle("is-scrolled", window.scrollY > 12);
+			};
+			onScroll();
+			window.addEventListener("scroll", onScroll, { passive: true });
+		}
+	})();
+</script>

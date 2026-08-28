@@ -1,0 +1,87 @@
+---
+import BtnPadrao from "../BtnPadrao.astro";
+---
+
+<section
+	id="realtime"
+	class="reveal w-full min-h-screen-safe flex items-center justify-center flex-col gap-16 mobile:w-screen mobile:h-full mobile:gap-2.5 mobile:my-20 mobile:mx-0 carousel:h-full carousel:gap-10 carousel:my-16"
+>
+	<div class="flex items-center justify-center flex-col">
+		<h1 class="text-[3.5rem] font-brown text-brand-2 mobile:text-[2rem] mobile:text-center">Cobertura real time</h1>
+		<h2 class="text-[1.7rem] font-montserrat text-brand-2 mb-8 mobile:text-[1rem]">Produção 100% mobile</h2>
+	</div>
+	<div
+		class="w-full flex items-center justify-center gap-32 mobile:justify-center mobile:flex-col-reverse mobile:gap-5 carousel:justify-center carousel:flex-col-reverse carousel:gap-8"
+	>
+		<div class="flex items-center justify-center gap-8">
+			<img
+				class="foto-player relative z-0 w-60 cursor-pointer transition-transform duration-500 ease-out hover:scale-105 hover:shadow-xl translate-y-(--parallax-y,0px) mobile:max-w-37.5"
+				src="/assets/img/img-player/img-realtime1.png"
+				alt=""
+				data-video-id="1076808479"
+				data-parallax="0.1"
+			/>
+			<img
+				class="foto-player relative z-0 w-60 cursor-pointer transition-transform duration-500 ease-out hover:scale-105 hover:shadow-xl translate-y-(--parallax-y,0px) mobile:max-w-37.5"
+				src="/assets/img/img-player/img-realtime2.png"
+				alt=""
+				data-video-id="1076807494"
+				data-parallax="-0.1"
+			/>
+		</div>
+
+		<div
+			id="videoModal"
+			class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-auto bg-[rgba(0,0,0,0.8)] justify-center items-center"
+		>
+			<span class="absolute top-8 right-8 text-white text-[40px] font-bold cursor-pointer close-player"
+				>&times;</span
+			>
+			<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[90%] max-h-[90%] w-[80%] h-[80%]">
+				<iframe
+					id="videoIframe"
+					src=""
+					frameborder="0"
+					allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+					title="Video"
+					class="w-full h-full"></iframe>
+			</div>
+		</div>
+
+		<div class="flex items-center justify-center flex-col gap-8 mobile:gap-5">
+			<p
+				class="w-[min(50rem,85vw)] font-montserrat text-[1.5rem] text-brand-2 mobile:w-[80%] mobile:text-[1rem] mobile:mr-0"
+			>
+				<span class="font-semibold"
+					>Capturamos, editamos e entregamos
+					conteúdos em minutos deixando seu
+					público atualizado em tempo real.</span
+				> Cada
+				etapa é planejada para garantir que sua
+				marca/evento estejam presentes no
+				momento ideal, estabelecendo uma
+				conexão rápida e direta com o público.
+			</p>
+			<div
+				class="relative z-5 w-full h-40 flex items-center justify-center rounded-[30px] bg-brand-1 gap-20 mobile:w-screen mobile:h-20 mobile:px-5 mobile:py-2.5 mobile:justify-between mobile:gap-5 mobile:rounded-none carousel:justify-between carousel:gap-6 carousel:px-6"
+			>
+				<p class="font-montserrat text-[1.5rem] font-semibold text-brand-2 whitespace-pre-line mobile:text-[0.8rem]">
+					Cobertura<br />SHOW +<br />EVENTOS
+				</p>
+				<p class="font-montserrat text-[1.5rem] font-semibold text-brand-2 whitespace-pre-line mobile:text-[0.8rem]">
+					Cobertura<br />CASAMENTO +<br />ANIVERSÁRIO
+				</p>
+				<p class="font-montserrat text-[1.5rem] font-semibold text-brand-2 whitespace-pre-line mobile:text-[0.8rem]">
+					Cobertura<br />PALESTRA +<br />WORKSHOP
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="mobile:w-[60%]">
+		<BtnPadrao
+			href="https://wa.me/5565998037287?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20%F0%9F%A4%A9%0ATenho%20interesse%20no%20servi%C3%A7o%20de%20voc%C3%AAs%20%F0%9F%8E%AC"
+		>
+			Tenho interesse
+		</BtnPadrao>
+	</div>
+</section>

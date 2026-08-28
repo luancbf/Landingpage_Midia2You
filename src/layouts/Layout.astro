@@ -1,0 +1,58 @@
+---
+import "../styles/global.css";
+import DecoracoesSvg from "../components/DecoracoesSvg.astro";
+---
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Midia2You</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#4e2a27" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="msapplication-navbutton-color" content="#0d6efd" />
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50F7F1TFMM"></script>
+		<script>
+			declare global {
+				interface Window {
+					dataLayer: any[];
+				}
+			}
+
+			window.dataLayer = window.dataLayer || [];
+			function gtag(...args: any[]) {
+				window.dataLayer.push(args);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-50F7F1TFMM");
+		</script>
+
+		<link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+
+		<!-- Sem JS, as seções ficariam com opacity:0 (estado inicial do scroll-reveal) para sempre. -->
+		<noscript>
+			<style>
+				.reveal {
+					opacity: 1 !important;
+					transform: none !important;
+				}
+			</style>
+		</noscript>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Ethiopic:wght@100..900&display=swap"
+		/>
+	</head>
+	<body>
+		<DecoracoesSvg />
+		<slot />
+	</body>
+</html>

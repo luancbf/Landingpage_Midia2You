@@ -1,0 +1,17 @@
+---
+interface Props {
+	href: string;
+	target?: string;
+	rel?: string;
+}
+const { href, target, rel } = Astro.props;
+---
+
+<a
+	class="px-12 py-[1.3rem] rounded-[25px] bg-brand-2 text-brand-3 no-underline font-montserrat font-normal text-[1.5rem] text-center transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:scale-105 hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(78,42,39,0.35)] active:scale-95 mobile:flex mobile:justify-center mobile:p-3.75 mobile:rounded-[20px] mobile:font-normal mobile:text-[1.2rem] tablet-sm:flex tablet-sm:justify-center tablet-sm:p-5 tablet-sm:rounded-[25px] tablet-sm:font-normal tablet-sm:text-[30px]"
+	href={href}
+	target={target}
+	rel={rel}
+>
+	<slot />
+</a>

@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-1: #d2baa7;
+  --color-brand-2: #4e2a27;
+  --color-brand-3: #f1eee7;
+
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-brown: "BrownSugar", cursive;
+  --font-noto: "Noto Serif Ethiopic", serif;
+}
+
+/* Breakpoints exatos usados no site original (não são os padrões do Tailwind) */
+@custom-variant mobile (@media (max-width: 480px));
+@custom-variant tablet-sm (@media (min-width: 481px) and (max-width: 768px));
+@custom-variant tablet (@media (min-width: 768px) and (max-width: 1024px));
+@custom-variant tablet-portrait (@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait));
+@custom-variant desktop (@media (min-width: 1025px));
+/* Faixa "intermediária" (481–1279px): fecha a lacuna que o design original deixava entre o
+   tratamento mobile e o tratamento desktop, onde carrosséis/textos de largura fixa vazavam. */
+@custom-variant carousel (@media (min-width: 481px) and (max-width: 1279px));
+
+@font-face {
+  font-family: "BrownSugar";
+  src: url("/assets/fonts/Brown Sugar .ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  list-style-type: none;
+  background-color: var(--color-brand-3);
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: auto;
+  font-size: 100%;
+  /* O site original nunca define line-height; restaura o padrão do navegador
+     por cima do Preflight do Tailwind (que força 1.5) para manter as alturas idênticas. */
+  line-height: normal;
+}
+
+/* Cada seção ocupa no mínimo uma tela cheia. min-height: 100dvh é a medida correta (considera
+   a barra de endereço do navegador mobile aparecendo/sumindo); 100vh fica como reserva para
+   navegadores sem suporte a dvh — evita usar as duas classes soltas repetidas em cada seção
+   (o que a IDE também aponta como conflito de utilitário). */
+@layer utilities {
+  .min-h-screen-safe {
+    min-height: 100vh;
+  }
+}
+/* Em regra separada (não a mesma declaração repetida) para o minificador do build não
+   descartar o fallback "min-height: 100vh" acima ao enxergar as duas juntas. */
+@supports (min-height: 100dvh) {
+  @layer utilities {
+    .min-h-screen-safe {
+      min-height: 100dvh;
+    }
+  }
+}
+
+/* Scroll-reveal: aplicado via classe "reveal" + toggle de "is-visible" pelo IntersectionObserver
+   em src/pages/index.astro. Fade + slide-up sutil na primeira vez que a seção aparece. */
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Entrada do hero (acima da dobra): animação 100% CSS, toca sozinha ao carregar a página —
+   não depende do IntersectionObserver, então nunca há flash de conteúdo invisível se o JS
+   demorar a carregar. */
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@layer utilities {
+  .animate-hero {
+    animation: hero-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+/* Seta de "arraste para baixo" no fim do hero: flutua bem suavemente, sem o exagero do
+   animate-bounce padrão do Tailwind. */
+@keyframes scroll-hint {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+@layer utilities {
+  .animate-scroll-hint {
+    animation: scroll-hint 2.4s ease-in-out infinite;
+    opacity: 0.75;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,42 @@
+---
+import BtnPadrao from "../BtnPadrao.astro";
+---
+
+<section
+	id="pack"
+	class="reveal w-full min-h-screen-safe flex items-center justify-center gap-16 mobile:flex-col mobile:gap-5 mobile:my-20 mobile:mx-0 carousel:flex-col carousel:gap-8 carousel:my-16"
+>
+	<img
+		class="w-[min(40rem,85vw)] transition-transform duration-700 ease-out hover:scale-[1.02] translate-y-(--parallax-y,0px) mobile:w-[95%]"
+		src="/assets/img/img-pack.png"
+		alt=""
+		data-parallax="0.1"
+	/>
+	<div class="flex items-start justify-center flex-col mobile:items-center carousel:items-center">
+		<div>
+			<h1
+				class="font-montserrat text-[5rem] leading-[0.9] text-brand-2 whitespace-pre-line mb-5 mobile:text-[2.5rem] mobile:mb-1.25"
+			>
+				<span class="font-semibold">Pack</span><br />DE FIGURINHAS
+			</h1>
+			<img
+				class="w-36 transition-transform duration-500 ease-out hover:scale-110 hover:rotate-3 translate-x-(--parallax-x,0px) mobile:w-20 mobile:self-start"
+				src="/assets/img/logom2y-02.png"
+				alt=""
+				data-parallax="0.3"
+				data-parallax-axis="x"
+			/>
+		</div>
+		<p
+			class="font-montserrat text-[1.5rem] text-brand-2 whitespace-pre-line mt-8 mb-12 mobile:text-[17px] mobile:my-6.25 mobile:mx-7.5 mobile:whitespace-normal"
+		>
+			Pagamento único, acesso vitalicio + atualização gratuita<br />
+			sem nenhum custo adicional.<br />
+			Após a confirmação de pagamento o acesso chegará<br />
+			no seu e-mail.
+		</p>
+		<div class="mobile:w-[60%]">
+			<BtnPadrao href="https://pay.kiwify.com.br/Nh5jLqq">Quero adquirir</BtnPadrao>
+		</div>
+	</div>
+</section>

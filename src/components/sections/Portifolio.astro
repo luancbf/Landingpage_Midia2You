@@ -1,0 +1,221 @@
+---
+import BtnPadrao from "../BtnPadrao.astro";
+
+const navDotClasses =
+	"mobile:border-2 mobile:border-brand-2 mobile:p-1.25 mobile:rounded-[10px] mobile:cursor-pointer mobile:transition-all mobile:duration-700 mobile:ease-[cubic-bezier(0.34,1.56,0.64,1)] carousel:border-2 carousel:border-brand-2 carousel:p-1.25 carousel:rounded-[10px] carousel:cursor-pointer carousel:transition-all carousel:duration-700 carousel:ease-[cubic-bezier(0.34,1.56,0.64,1)]";
+const manualBtnClasses = `${navDotClasses} mobile:hover:bg-brand-2 carousel:hover:bg-brand-2`;
+const itemHoverClasses =
+	"shrink-0 relative w-[16.2rem] cursor-pointer transition-transform duration-500 ease-out hover:z-10 hover:scale-105 hover:-translate-y-1 hover:shadow-xl mobile:transition-all mobile:duration-700 mobile:ease-[cubic-bezier(0.34,1.56,0.64,1)] carousel:w-40 carousel:relative carousel:transition-all carousel:duration-700 carousel:ease-[cubic-bezier(0.34,1.56,0.64,1)]";
+---
+
+<section
+	id="portifolio"
+	class="reveal w-full min-h-screen-safe flex items-center justify-center flex-col gap-12 py-20 mobile:py-14"
+>
+	<h1 class="text-[4rem] font-brown text-brand-2 mobile:text-center mobile:text-[2rem]">
+		Confira alguns dos nossos trabalhos
+	</h1>
+	<div class="flex items-center justify-center flex-col gap-12">
+		<!-- STORY -->
+		<div class="flex items-center justify-center flex-col gap-10">
+			<p class="font-montserrat text-[3rem] font-semibold text-brand-2 mobile:text-[25px]">Story</p>
+			<div class="w-full static mx-auto flex overflow-hidden mobile:w-90 carousel:w-120">
+				<div class="slides-story flex gap-8 mobile:w-275 mobile:gap-10 carousel:w-190 carousel:gap-10">
+					<input type="radio" name="radio-btn-story" id="radio1-story" checked class="peer/s1 hidden" />
+					<input type="radio" name="radio-btn-story" id="radio2-story" class="peer/s2 hidden" />
+					<input type="radio" name="radio-btn-story" id="radio3-story" class="peer/s3 hidden" />
+
+					<div
+						class={`flex items-center ${itemHoverClasses}
+						mobile:w-40 mobile:relative
+						mobile:peer-checked/s1:ml-0 mobile:peer-checked/s2:-ml-50 mobile:peer-checked/s3:-ml-100
+						carousel:peer-checked/s1:ml-0 carousel:peer-checked/s2:-ml-50 carousel:peer-checked/s3:-ml-100`}
+					>
+						<img
+							class="foto-player-story w-full h-auto"
+							src="/assets/img/img-player/img-player-story1.png"
+							data-video-id="1076805216"
+						/>
+					</div>
+					<div class={`flex items-center ${itemHoverClasses} mobile:w-40 mobile:relative`}>
+						<img class="img-static w-full h-auto" src="/assets/img/img-story1.jpeg" />
+					</div>
+					<div class={`flex items-center ${itemHoverClasses} mobile:w-40 mobile:relative`}>
+						<img
+							class="foto-player-story w-full h-auto"
+							src="/assets/img/img-player/img-player-story2.png"
+							data-video-id="1076806227"
+						/>
+					</div>
+					<div class={`flex items-center ${itemHoverClasses} mobile:w-40 mobile:relative`}>
+						<img class="img-static w-full h-auto" src="/assets/img/img-story2.jpeg" />
+					</div>
+
+					<div
+						class="mobile:absolute mobile:w-90 mobile:-mt-7.5 mobile:flex mobile:justify-center carousel:absolute carousel:w-120 carousel:-mt-7.5 carousel:flex carousel:justify-center
+						mobile:peer-checked/s1:[&_.auto-btn1-story]:bg-brand-2 mobile:peer-checked/s2:[&_.auto-btn2-story]:bg-brand-2 mobile:peer-checked/s3:[&_.auto-btn3-story]:bg-brand-2
+						carousel:peer-checked/s1:[&_.auto-btn1-story]:bg-brand-2 carousel:peer-checked/s2:[&_.auto-btn2-story]:bg-brand-2 carousel:peer-checked/s3:[&_.auto-btn3-story]:bg-brand-2"
+					>
+						<div class={`auto-btn1-story ${navDotClasses} mobile:mr-7.5 carousel:mr-7.5`}></div>
+						<div class={`auto-btn2-story ${navDotClasses} mobile:mr-7.5 carousel:mr-7.5`}></div>
+						<div class={`auto-btn3-story ${navDotClasses}`}></div>
+					</div>
+				</div>
+				<div
+					class="mobile:absolute mobile:w-90 mobile:-mt-7.5 mobile:flex mobile:justify-center carousel:absolute carousel:w-120 carousel:-mt-7.5 carousel:flex carousel:justify-center"
+				>
+					<label for="radio1-story" class={`${manualBtnClasses} mobile:mr-7.5 carousel:mr-7.5`}></label>
+					<label for="radio2-story" class={`${manualBtnClasses} mobile:mr-7.5 carousel:mr-7.5`}></label>
+					<label for="radio3-story" class={manualBtnClasses}></label>
+				</div>
+			</div>
+		</div>
+
+		<!-- CARROSSEL -->
+		<div class="flex items-center justify-center flex-col gap-[1.2rem]">
+			<p class="font-montserrat text-[3rem] font-semibold text-brand-2 mobile:text-[25px]">Carrossel</p>
+			<div class="flex flex-col gap-[2.2rem] mobile:gap-7.5">
+				<div
+					class="flex overflow-x-auto flex-nowrap [scroll-snap-type:x_mandatory] mobile:scroll-smooth mobile:pb-2 mobile:[&::-webkit-scrollbar]:h-2 mobile:[&::-webkit-scrollbar-thumb]:bg-[#ccc] mobile:[&::-webkit-scrollbar-thumb]:rounded-sm"
+				>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-1/img-carrossel-1.jpeg"
+						/>
+					</div>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-1/img-carrossel-2.jpeg"
+						/>
+					</div>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-1/img-carrossel-3.jpeg"
+						/>
+					</div>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-1/img-carrossel-4.jpeg"
+						/>
+					</div>
+				</div>
+
+				<div
+					class="flex overflow-x-auto flex-nowrap [scroll-snap-type:x_mandatory] mobile:scroll-smooth mobile:pb-2 mobile:[&::-webkit-scrollbar]:h-2 mobile:[&::-webkit-scrollbar-thumb]:bg-[#ccc] mobile:[&::-webkit-scrollbar-thumb]:rounded-sm"
+				>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-2/img-carrossel-1.jpeg"
+						/>
+					</div>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-2/img-carrossel-2.jpeg"
+						/>
+					</div>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-2/img-carrossel-3.jpeg"
+						/>
+					</div>
+					<div class="max-w-72 flex-none overflow-hidden mobile:max-w-75">
+						<img
+							class="img-static w-full object-cover block cursor-pointer transition-transform duration-500 ease-out hover:scale-110"
+							src="/assets/img/galeria-carrossel-2/img-carrossel-4.jpeg"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- REELS -->
+		<div class="flex items-center justify-center flex-col gap-10">
+			<p class="font-montserrat text-[3rem] font-semibold text-brand-2 mobile:text-[25px]">Reels</p>
+			<div class="w-full mx-auto flex overflow-hidden mobile:w-90 carousel:w-120">
+				<div class="slides-reels flex gap-8 mobile:w-275 mobile:gap-10 carousel:w-190 carousel:gap-10">
+					<input type="radio" name="radio-btn-reels" id="radio1-reels" checked class="peer/re1 hidden" />
+					<input type="radio" name="radio-btn-reels" id="radio2-reels" class="peer/re2 hidden" />
+					<input type="radio" name="radio-btn-reels" id="radio3-reels" class="peer/re3 hidden" />
+
+					<div
+						class={`flex items-start ${itemHoverClasses}
+						mobile:w-40 mobile:relative
+						mobile:peer-checked/re1:ml-0 mobile:peer-checked/re2:-ml-50 mobile:peer-checked/re3:-ml-100
+						carousel:peer-checked/re1:ml-0 carousel:peer-checked/re2:-ml-50 carousel:peer-checked/re3:-ml-100`}
+					>
+						<img
+							class="foto-player-reels w-full h-auto"
+							src="/assets/img/img-player/img-reels1.png"
+							data-video-id="1078171342"
+						/>
+					</div>
+					<div class={`flex items-start ${itemHoverClasses} mobile:w-40 mobile:relative`}>
+						<img
+							class="foto-player-reels w-full h-auto"
+							src="/assets/img/img-player/img-reels2.png"
+							data-video-id="1078085165"
+						/>
+					</div>
+					<div class={`flex items-start ${itemHoverClasses} mobile:w-40 mobile:relative`}>
+						<img
+							class="foto-player-reels w-full h-auto"
+							src="/assets/img/img-player/img-reels3.png"
+							data-video-id="1078171100"
+						/>
+					</div>
+					<div class={`flex items-start ${itemHoverClasses} mobile:w-40 mobile:relative`}>
+						<img
+							class="foto-player-reels w-full h-auto"
+							src="/assets/img/img-player/img-reels4.png"
+							data-video-id="1076814085"
+						/>
+					</div>
+
+					<div
+						class="mobile:absolute mobile:w-90 mobile:-mt-7.5 mobile:flex mobile:justify-center carousel:absolute carousel:w-120 carousel:-mt-7.5 carousel:flex carousel:justify-center
+						mobile:peer-checked/re1:[&_.auto-btn1-reels]:bg-brand-2 mobile:peer-checked/re2:[&_.auto-btn2-reels]:bg-brand-2 mobile:peer-checked/re3:[&_.auto-btn3-reels]:bg-brand-2
+						carousel:peer-checked/re1:[&_.auto-btn1-reels]:bg-brand-2 carousel:peer-checked/re2:[&_.auto-btn2-reels]:bg-brand-2 carousel:peer-checked/re3:[&_.auto-btn3-reels]:bg-brand-2"
+					>
+						<div class={`auto-btn1-reels ${navDotClasses} mobile:mr-7.5 carousel:mr-7.5`}></div>
+						<div class={`auto-btn2-reels ${navDotClasses} mobile:mr-7.5 carousel:mr-7.5`}></div>
+						<div class={`auto-btn3-reels ${navDotClasses}`}></div>
+					</div>
+				</div>
+				<div
+					class="mobile:absolute mobile:w-90 mobile:-mt-7.5 mobile:flex mobile:justify-center carousel:absolute carousel:w-120 carousel:-mt-7.5 carousel:flex carousel:justify-center"
+				>
+					<label for="radio1-reels" class={`${manualBtnClasses} mobile:mr-7.5 carousel:mr-7.5`}></label>
+					<label for="radio2-reels" class={`${manualBtnClasses} mobile:mr-7.5 carousel:mr-7.5`}></label>
+					<label for="radio3-reels" class={manualBtnClasses}></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile:w-[60%]">
+		<BtnPadrao
+			href="https://wa.me/5565993357046?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20%F0%9F%A4%A9%0ATenho%20interesse%20no%20servi%C3%A7o%20de%20voc%C3%AAs%20%F0%9F%8E%AC"
+		>
+			Entre em contato
+		</BtnPadrao>
+	</div>
+
+	<div
+		id="modal"
+		class="hidden fixed z-10 left-0 top-0 w-full h-full overflow-hidden bg-[rgba(0,0,0,0.8)] justify-center items-center"
+	>
+		<span id="closeModal" class="absolute top-3.75 right-8.75 text-white text-[40px] font-bold cursor-pointer"
+			>&times;</span
+		>
+		<img
+			id="modalImage"
+			class="w-auto mx-auto block max-w-500 max-h-[90vh] object-contain transition-transform duration-300 ease-in-out cursor-pointer tablet-sm:w-auto tablet-sm:max-w-none tablet-sm:h-[90vh] tablet-sm:overflow-y-auto mobile:w-[80%] mobile:max-w-none mobile:h-auto mobile:overflow-y-auto"
+		/>
+	</div>
+</section>
