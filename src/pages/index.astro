@@ -176,6 +176,20 @@ import Portifolio from "../components/sections/Portifolio.astro";
 		updateParallax();
 		window.addEventListener("scroll", onScrollOrResize, { passive: true });
 		window.addEventListener("resize", onScrollOrResize);
+
+		// A chamada acima pode rodar antes das imagens (sem width/height) terminarem de
+		// carregar, calculando a posição com o tamanho errado — daí o elemento nascer
+		// deslocado até o primeiro scroll recalcular certo. Recalcula de novo assim que
+		// tudo (imagens, fontes) estiver pronto, sem precisar de interação do usuário.
+		window.addEventListener("load", updateParallax);
+		if (document.fonts && document.fonts.ready) {
+			document.fonts.ready.then(updateParallax);
+		}
+		for (const { el } of parallaxEls) {
+			if (el instanceof HTMLImageElement && !el.complete) {
+				el.addEventListener("load", updateParallax, { once: true });
+			}
+		}
 	}
 
 	// Seta de "arraste para baixo": rola uma tela ao clicar, e some suavemente assim que
