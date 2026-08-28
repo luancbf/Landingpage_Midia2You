@@ -15,6 +15,25 @@ import DecoracoesSvg from "../components/DecoracoesSvg.astro";
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="msapplication-navbutton-color" content="#0d6efd" />
 
+		<!-- CSS crítico inline: esconde o menu mobile já no primeiro paint, antes mesmo do
+		     CSS externo carregar. Sem isso, numa conexão mais lenta, o HTML puro (menu com
+		     display padrão do navegador, sem opacity:0) pode aparecer visível por um instante
+		     até o stylesheet carregar — o "flash" do menu aberto ao abrir a página. -->
+		<style is:inline>
+			@media (max-width: 480px),
+				(min-width: 481px) and (max-width: 768px),
+				(min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+				.nav ul {
+					opacity: 0;
+					pointer-events: none;
+				}
+				.nav ul.active {
+					opacity: 1;
+					pointer-events: auto;
+				}
+			}
+		</style>
+
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50F7F1TFMM"></script>
 		<script>
