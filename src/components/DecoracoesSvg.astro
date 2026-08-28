@@ -1,10 +1,16 @@
 ---
 const path =
 	"M599.389,1469.581C726.954,1367.590,873.069,1236.884,855.878,1074.106C839.019,914.473,640.875,860.272,523.443,750.468C410.793,645.136,345.979,454.994,192.045,453.396C37.670,451.795,-61.804,613.758,-144.903,743.533C-209.949,845.115,-197.233,965.541,-212.601,1085.329C-232.721,1242.162,-348.441,1418.514,-247.135,1540.409C-145.472,1662.735,50.176,1605.059,208.340,1591.826C349.929,1579.979,488.589,1558.168,599.389,1469.581Z";
+
+// Abaixo de 1280px (mobile + a faixa "carousel" que cobre tablets), o tamanho e o
+// deslocamento usam vw em vez de px fixo: assim a "fatia" visível da forma (um pouco
+// menos da metade dela) fica proporcional em qualquer largura de tela dessa faixa,
+// em vez de precisar ajustar px separado para cada tamanho de mobile/tablet.
+const compact = "max-w-[85vw] mobile:max-w-[85vw] carousel:max-w-[85vw]";
 ---
 
 <svg
-	class="absolute max-w-350 h-auto -z-1 top-75 -left-172.5 translate-y-(--parallax-y,0px) mobile:max-w-150 mobile:-left-72 mobile:top-[60vh]"
+	class={`absolute ${compact} h-auto -z-1 top-75 -left-172.5 translate-y-(--parallax-y,0px) mobile:left-[-46vw] mobile:top-[60vh] carousel:left-[-46vw] carousel:top-[60vh]`}
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="-800 0 2000 2000"
 	fill="#d2baa7"
@@ -14,7 +20,7 @@ const path =
 	<path d={path}></path>
 </svg>
 <svg
-	class="absolute max-w-350 h-auto -z-1 -right-200 top-325 -rotate-160 translate-y-(--parallax-y,0px) mobile:max-w-150 mobile:-right-80 mobile:top-280 mobile:-rotate-20"
+	class={`absolute ${compact} h-auto -z-1 -right-200 top-325 -rotate-160 translate-y-(--parallax-y,0px) mobile:right-[-46vw] mobile:top-280 mobile:-rotate-20 carousel:right-[-46vw] carousel:top-280 carousel:-rotate-20`}
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="-800 0 2000 2000"
 	fill="#d2baa7"
@@ -25,7 +31,7 @@ const path =
 </svg>
 
 <svg
-	class="absolute max-w-350 h-auto -z-1 -left-185 top-625 -rotate-30 translate-y-(--parallax-y,0px) mobile:max-w-150 mobile:-left-80 mobile:top-520 mobile:-rotate-10"
+	class={`absolute ${compact} h-auto -z-1 -left-185 top-625 -rotate-30 translate-y-(--parallax-y,0px) mobile:left-[-46vw] mobile:top-520 mobile:-rotate-10 carousel:left-[-46vw] carousel:top-520 carousel:-rotate-10`}
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="-618 355 1582 1583"
 	fill="#d2baa7"
@@ -35,7 +41,7 @@ const path =
 	<path d={path}></path>
 </svg>
 <svg
-	class="absolute max-w-350 h-auto -z-1 -right-200 top-1100 -rotate-30 translate-y-(--parallax-y,0px) mobile:max-w-150 mobile:-right-80 mobile:top-880 mobile:-rotate-10"
+	class={`absolute ${compact} h-auto -z-1 -right-200 top-1100 -rotate-30 translate-y-(--parallax-y,0px) mobile:right-[-46vw] mobile:top-880 mobile:-rotate-10 carousel:right-[-46vw] carousel:top-880 carousel:-rotate-10`}
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="-618 355 1582 1583"
 	fill="#d2baa7"
